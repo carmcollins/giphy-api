@@ -8,4 +8,4 @@ This project uses HTML, CSS, Javascript, APIs, and AJAX to create a dynamic webp
 * Click on GIFs to pause and un-pause them from playing
 
 ### To See The Project
-Go to this page and click a button to see GIFs from that movie!
+Go to [this page](https://carmcollins.github.io/giphy-api/) and click a button to see GIFs from that movie!
