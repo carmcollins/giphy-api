@@ -32,7 +32,9 @@ $(document.body).on("click", ".movie", function() {
             p.addClass("rating");
             var gif = $("<img>");
             gif.attr("src", results[i].images.fixed_height_still.url);
-            gif.attr("state", "still");
+            gif.attr("still", results[i].images.fixed_height_still.url);
+            gif.attr("animate", results[i].images.fixed_height.url)
+            gif.attr("data-state", "still");
             gif.addClass("gif");
             gifDiv.append(p);
             gifDiv.append(gif);
@@ -42,17 +44,17 @@ $(document.body).on("click", ".movie", function() {
 });
 
 // Function for unpausing and pausing GIFs -- this isn't working???
-$(".gif").on("click", function() {
-    var state = $(this).attr("state");
+$(document.body).on("click", ".gif", function() {
+    var state = $(this).attr("data-state");
 
     if (state === "still") {
-        var animateURL = results[i].images.fixed_height.url
+        var animateURL = $(this).attr("animate");
         $(this).attr("src", animateURL);
-        $(this).attr("state", "animate");
+        $(this).attr("data-state", "animate");
     } else if (state === "animate") {
-        var stillURL = results[i].images.fixed_height_still.url
+        var stillURL = $(this).attr("still");
         $(this).attr("src", stillURL);
-        $(this).attr("state", "still");
+        $(this).attr("data-state", "still");
     }
 });
 
