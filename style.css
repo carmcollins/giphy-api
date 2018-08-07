@@ -1,0 +1,57 @@
+body {
+    background-image: url(clouds.jpg);
+}
+
+.header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1,
+p,
+form,
+button,
+#buttons-div,
+#gifs-div {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-family: "Chelsea Market", cursive;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#user-input {
+    height: 35px;
+    width: 200px;
+    font-size: 1em;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid white; */
+    border: 2px solid white;
+    background-color: #ff9933;
+    border-radius: 4px;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: #ff6699;
+}
+
+.gif-display {
+    float: left;
+    margin: 10px;
+}
+
+.rating {
+    background-color: #ffe066;
+    padding: 5px;
+}
