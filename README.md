@@ -1,4 +1,4 @@
-# GIF Generator
+# Disney Pixar GIF Generator
 Homework #6
 
 ### About The Project
